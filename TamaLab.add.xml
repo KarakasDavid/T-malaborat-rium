@@ -1,0 +1,56 @@
+<aditionals>
+    #kiskör
+    <rerouter id="rerouter_0" edges="E2" probability="1">
+        <interval begin="0" end="10000">
+            <destProbReroute id="E0"/>
+        </interval>
+    </rerouter>
+
+    <rerouter id="rerouter_1" edges="E0" probability="1">
+        <interval begin="0" end="10000">
+            <destProbReroute id="E3"/>
+        </interval>
+    </rerouter>
+
+    #nagykör
+    <rerouter id="rerouter_2" edges="BV3" probability="1">
+        <interval begin="0" end="10000">
+            <destProbReroute id="-BV2"/>
+        </interval>
+    </rerouter>
+
+
+    <rerouter id="rerouter_3" edges="-BV2" probability="1">
+        <interval begin="0" end="10000">
+            <destProbReroute id="BV3"/>
+        </interval>
+    </rerouter>
+
+    #HWkör
+    <rerouter id="rerouter_4" edges="-HW7" probability="1">
+        <interval begin="0" end="10000">
+            <destProbReroute id="-HW6"/>
+        </interval>
+    </rerouter>
+
+
+    <rerouter id="rerouter_5" edges="-HW6" probability="1">
+        <interval begin="0" end="10000">
+            <destProbReroute id="-HW7"/>
+        </interval>
+    </rerouter>
+
+    #HW_flow_kör
+    <rerouter id="rerouter_5" edges="HW6" probability="1">
+        <interval begin="0" end="10000">
+            <destProbReroute id="HW7"/>
+        </interval>
+    </rerouter>
+
+
+    <rerouter id="rerouter_6" edges="HW7" probability="1">
+        <interval begin="0" end="10000">
+            <destProbReroute id="HW6"/>
+        </interval>
+    </rerouter>
+</aditionals>

@@ -1,0 +1,19 @@
+
+<routes>
+    <vType id="typeYellow" accel="0.8" decel="4.5" sigma="0.5" length="5" minGap="2.5" maxSpeed="10" guiShape="passenger"/>
+    <vType id="typeRed" accel="0.8" decel="4.5" sigma="0.5" length="5" minGap="2.5" maxSpeed="10" guiShape="passenger" color="1,0,0"/>
+    <vType id="typeGreen" accel="0.8" decel="4.5" sigma="0.5" length="5" minGap="2.5" maxSpeed="10" guiShape="passenger" color="0,1,0"/>
+    <vType id="typeBlue" accel="0.8" decel="4.5" sigma="0.5" length="5" minGap="2.5" maxSpeed="12" guiShape="passenger" color="0,0,1"/>
+
+    <route id="route_0" edges="E0 E1 E2 E3" />
+    <route id="route_1" edges="-HW7 -HW8 -HW9 -HW1 -HW2 -HW3 -HW4 -HW5 -HW6" />
+    <route id="route_2" edges="E3 -BV2" />
+    <flow id="f_0" type="typeRed" beg="0" end="0" number="5" from="BV3" to="-BV2"/>
+    <flow id="f_1" type="typeGreen" beg="0" end="0" number="20" from="HW7" to="HW8"/>
+    <flow id="f_2" type="typeRed" beg="0" end="0" number="20" from="-HW8" to="-HW7"/>
+    <flow id="f_3" type="typeYellow" beg="0" end="0" number="15" from="-HW7" to="-HW6"/>
+
+    <vehicle id="0" type="typeYellow" route="route_0" depart="0"/>
+    <vehicle id="1" type="typeRed" route="route_0" depart="0"/>
+    <vehicle id="4" type="typeBlue" route="route_1" depart="10"/>
+</routes>

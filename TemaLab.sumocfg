@@ -1,0 +1,11 @@
+<configuration >
+    <input>
+        <net-file value="TemaLab.net.xml"/>
+        <route-files value="TemaLab.rou.xml"/>
+        <additional-files value="TamaLab.add.xml"/>
+    </input>
+
+     <time>
+        <begin value="0"/>
+    </time>
+</configuration>
